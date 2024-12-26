@@ -61,6 +61,7 @@ task.spawn(
 )
 ]]
 
+--[[
 local hookfunction = hookfunction or hookfunc or detour_function
 local hookmetamethod =
     hookmetamethod or
@@ -103,7 +104,7 @@ OldNamecall =
 
         return OldNamecall(Self, ...)
     end
-)
+)]]
 
 section1:addButton(
     "Reset",
